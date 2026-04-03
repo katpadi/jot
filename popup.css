@@ -1,0 +1,117 @@
+:root {
+  --bg: #ffffff;
+  --surface: #f7f7f8;
+  --border: #e8e8ea;
+  --text: #111113;
+  --placeholder: #aaaaaf;
+  --label: #8888a0;
+  --accent: #f0a500;
+  --btn-hover: #ededef;
+  --shadow: rgba(0, 0, 0, 0.07);
+}
+
+[data-theme="dark"] {
+  --bg: #1c1c1e;
+  --surface: #2c2c2e;
+  --border: #3a3a3c;
+  --text: #f2f2f7;
+  --placeholder: #555560;
+  --label: #6e6e80;
+  --accent: #f0a500;
+  --btn-hover: #3a3a3c;
+  --shadow: rgba(0, 0, 0, 0.3);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  width: 340px;
+  height: 440px;
+  background: var(--bg);
+  display: flex;
+  flex-direction: column;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 14px 10px;
+  border-bottom: 1px solid var(--border);
+  background: var(--surface);
+  flex-shrink: 0;
+}
+
+.title {
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  color: var(--accent);
+  text-transform: uppercase;
+}
+
+.header-actions {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.icon-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 26px;
+  height: 26px;
+  border: none;
+  background: transparent;
+  color: var(--label);
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.15s, color 0.15s;
+}
+
+.icon-btn:hover {
+  background: var(--btn-hover);
+  color: var(--text);
+}
+
+textarea {
+  flex: 1;
+  width: 100%;
+  padding: 14px 16px;
+  font-size: 14px;
+  font-family: inherit;
+  line-height: 1.65;
+  border: none;
+  outline: none;
+  resize: none;
+  background: var(--bg);
+  color: var(--text);
+  caret-color: var(--accent);
+  transition: background 0.2s;
+}
+
+textarea::placeholder {
+  color: var(--placeholder);
+}
+
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 7px 14px;
+  border-top: 1px solid var(--border);
+  background: var(--surface);
+  flex-shrink: 0;
+}
+
+#charCount {
+  font-size: 11px;
+  color: var(--label);
+  letter-spacing: 0.02em;
+}
