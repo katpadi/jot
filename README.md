@@ -12,7 +12,7 @@ A tiny, minimalist browser note that removes the cost of context switching.
 
 ## Install
 
-[Chrome Web Store →](https://chromewebstore.google.com/detail/jot/YOUR_EXTENSION_ID)
+[Chrome Web Store →Jot](https://chromewebstore.google.com/detail/jot/gogmghfcgficidobmgjbpfdejaaekgid)
 
 ## Development
 
